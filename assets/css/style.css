@@ -1,0 +1,6 @@
+html, body {
+    margin : 0;
+}
+#navBar > div > a > img {
+    height : 30px;
+}
