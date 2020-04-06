@@ -39,3 +39,35 @@ footer {
 #credits {
     visibility: hidden;
 }
+
+/* début navbar */
+#navBar{
+    overflow: hidden;
+    background-color: #841e2c;
+}
+#navBar > div{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+section {
+    padding: 16px;
+  }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky + #secStory + #secService + #secContact{
+    padding-top: 60px;
+  }
+nav > div > a{
+    font-style: normal;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+/* fin navbar */
