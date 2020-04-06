@@ -10,12 +10,13 @@
 <body>
 <header id="p_head">
     <div id="infoContact">02.35.42.39.33</div>
-    <div id="btnHome"><h1>Hanami-sushi</h1></div>
+    <div id="btnHome"><h1>Hanami sushi</h1></div>
+    <div></div>
 </header>
 
 <body>
 <!-- 
--- NavBarf
+-- NavBar
 -------------------------------------->
 <nav id="navBar">
     <div id="startPage">
@@ -81,17 +82,17 @@
     <form action="/formulaire" method="post">
         <ul>
             <li><label for="name">Nom:</label>
-                <input id="name" name="name" placeholder="Nom" required /></li>
-    
-            <li><label for="first name">Prénom:</label>
-                <input id="first name" name="first name" placeholder="Prénom" required /></li>
-    
-            <li><label for="phone number">Téléphone</label>
-                <input id="phone number" name="phone" placeholder="Téléphone" required /></li>
-    
+                <input id="name" name="name" placeholder="Nom" required />
+            </li>  
+            <li><label for="first_name">Prénom:</label>
+                <input id="first_name" name="first_name" placeholder="Prénom" required />
+            </li>   
+            <li><label for="phone_number">Téléphone</label>
+                <input id="phone_number" name="phone" placeholder="Téléphone" required />
+            </li>   
             <li><label for="mail">Adresse Mail:</label>
-                <input id="adress mail" name="adress mail" placeholder="Adresse Mail" required /></li>
-
+                <input id="adress_mail" name="adress_mail" placeholder="Adresse Mail" required />
+            </li>
             <li>
                 <select name="choice" size="1">
                     <option>Choisir
@@ -101,12 +102,11 @@
                     <option>Autres (à préciser)
                 </select>
             </li>
+            <li>
+                <textarea></textarea>
+            </li>
+                <button type="submit">Envoyer le message</button>
         </ul>
-    
-        <textarea></textarea><br>
-        <button type="submit">Envoyer le message</button>
-    </form>
-        
     </form>
 </section>
 

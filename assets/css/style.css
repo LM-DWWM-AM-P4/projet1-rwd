@@ -1,13 +1,38 @@
 html, body {
     margin : 0;
 }
-
+section {
+    padding: 16px;
+  }
 h1, h2 {
+    font-size: medium;
     font-family: shojumaru;
     color: #7B1E31;
     text-align: center;
 }
+#infoContact {
+    flex:0.8;
+}
+#btnHome {
+    background-color: #7B1E31;
+    border-radius: 8px;
+    border-color: #f2f2f2;
+    border-width: 2px;
+    border-style: solid;
+    align-self: center;
+    justify-self: center;
+}
+#btnHome h1 {
+    padding: 4px;
+    font-size: larger;
+    color: #f2f2f2;
+    margin: 0px;
+
+}
 header {
+    display:flex;
+    flex-direction: column;
+    
     background-image: url("../img/cherry-blossoms-4069596_960_720.png");
     background-position: center;
     width: 100vw;
@@ -26,10 +51,49 @@ header {
 
 }
 
+/* ------------ */
+/* début navbar */
+/* ------------ */
+#navBar{
+    overflow: hidden;
+    background-color: #7B1E31;
+    font-family: shojumaru;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navBar > div{
+    padding: 10px;
+    color: #f2f2f2;
+    text-align: center;
+
+
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+nav > div > a{
+    color: white;
+    font-size: small;
+    text-decoration: none;
+}
 
 #navBar > div > a > img {
+    padding-right: 8px;
+    padding-left: 8px;
+    filter: invert();
     height : 30px;
+
 }
+/* ---------- */
+/* fin navbar */
+/* ---------- */
+
 
 footer {
     background-color: #7B1E31;
@@ -39,35 +103,3 @@ footer {
 #credits {
     visibility: hidden;
 }
-
-/* début navbar */
-#navBar{
-    overflow: hidden;
-    background-color: #841e2c;
-}
-#navBar > div{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-section {
-    padding: 16px;
-  }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-.sticky + #secStory + #secService + #secContact{
-    padding-top: 60px;
-  }
-nav > div > a{
-    font-style: normal;
-    color: white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-/* fin navbar */
