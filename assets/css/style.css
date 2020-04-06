@@ -7,7 +7,15 @@ h1, h2 {
     color: #7B1E31;
     text-align: center;
 }
-
+header {
+    background-image: url("../img/cherry-blossoms-4069596_960_720.png");
+    background-position: center;
+    background-repeat: ;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 .borderTitle{
     display: block;
