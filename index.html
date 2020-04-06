@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shojumaru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Hanami sushi</title>
 </head>
+<body>
 <header id="p_head">
     <div id="infoContact">02.35.42.39.33</div>
     <div id="btnHome">Hanami-sushi</div>
 </header>
+
+<body>
 <!-- 
--- NavBar
+-- NavBarf
 -------------------------------------->
 <nav id="navBar">
     <div id="startPage">
-        <a href="#p_head">Accueil</a>
+        <a href="#p_head">
+            <img src="assets/img/my-icons-collection/svg/004-pagoda.svg">
+            Accueil
+        </a>
     </div>
     <div id="story">
-        <a href="#story">Notre restaurant</a>
+        <a href="#secStory">
+            <img src="assets/img/my-icons-collection/svg/001-temple.svg">
+            Notre restaurant
+        </a>
     </div>
     <div id="service">
-        <a href="#service">Nos préstations</a>
+        <a href="#secService">
+            <img src="assets/img/my-icons-collection/svg/002-asian.svg">
+            Nos préstations
+        </a>
     </div>
     <div id="contact">
-        <a href="#contact">Nos préstations</a>
+        <a href="#secContact">
+            <img src="assets/img/my-icons-collection/svg/003-invoice.svg">
+            Contact
+        </a>
     </div>
 </nav>
 
@@ -31,8 +48,8 @@
 -- Story
 ---------------------------------->
 
-<section id="story">
-    <h1>Bienvenue</h1>
+<section id="secStory">
+    <div class="borderTitle"><h1>Bienvenue<h1></div>
     <div>
         <img src="assets/img/japan-4807317_960_720.jpg">
         <h2>Notre histoire</h2>
@@ -40,8 +57,72 @@
     </div>
 </section>
 
+<!-- 
+-- Réalisations
+------------------------------------------>
+ <section id="secService">
+     <div class="borderTitle"><h1>Nos réalisations<h1></div>
+     <div id="gallery">
+         <div id="left_arrow"><span><</span></div>
+         <div id="mainGallery">
+             <div class="slotimg">
+             </div>
+         </div>
+         <div id="right_arrow"><span>></span></div>
+     </div>
+ </section>
+<!-- 
+-- Contact
+----------------------------------->
 
-<body>
+<section id="secContact">
+    <div class="borderTitle"><h1>Contact<h1></div>
+    <p>Demander un devis</p>
+    <form action="/formulaire" method="post">
+        <ul>
+            <li><label for="name">Nom:</label>
+                <input id="name" name="name" placeholder="Nom" required /></li>
+    
+            <li><label for="first name">Prénom:</label>
+                <input id="first name" name="first name" placeholder="Prénom" required /></li>
+    
+            <li><label for="phone number">Téléphone</label>
+                <input id="phone number" name="phone" placeholder="Téléphone" required /></li>
+    
+            <li><label for="mail">Adresse Mail:</label>
+                <input id="adress mail" name="adress mail" placeholder="Adresse Mail" required /></li>
+
+            <li>
+                <select name="choice" size="1">
+                    <option>Choisir
+                    <option>Réservations
+                    <option>Privatisation
+                    <option>Réclamation
+                    <option>Autres (à préciser)
+                </select>
+            </li>
+        </ul>
+    
+        <textarea></textarea><br>
+        <button type="submit">Envoyer le message</button>
+    </form>
+        
+    </form>
+</section>
+
+
+<!-- 
+-- Footer
+----------------------------------->
+<footer>
+    <div id="credits">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/mangsaabguru" title="mangsaabguru">mangsaabguru</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/linector" title="Linector">Linector</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+</footer>
+
+
     
 </body>
 </html>
