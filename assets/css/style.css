@@ -99,6 +99,41 @@ nav > div > a{
 /* ---------- */
 
 /* ---------- */
+/* début story */
+/* ---------- */
+#secStory{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgStory{
+    margin-top: 1.2rem;
+    width: 100%;
+    align-self: center;
+}
+.txtStory{
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+    background-color: rgba(0, 0, 0, 0.74);
+    background-size: 5rem;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 2vw;
+    width: 30%;
+}
+h2{
+    font-size: 3vw;
+    color: white;
+}
+/* ---------- */
+/* fin story */
+/* ---------- */
+
+/* ---------- */
 /* Formulaire */
 /* ---------- */
 fieldset {
