@@ -202,42 +202,52 @@ h2{
 /* Formulaire */
 /* ---------- */
 fieldset {
-    width: 550px;
-    padding: 30px;
-    margin: 50px auto;
+
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
     border: none;
     background: white;
     border-radius: 3px;
     border: 2px solid #7b1e31;
-    position: relative;
-}
-
-label {
-    display: inline-block;
-    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    background: white;
-    height: 40px;
-    width: 350px;
-    border: 1px solid #7b1e31;
-    padding: 0 20px;
-    margin: 20px 0;
-    font-size: 1em;
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
-textarea {
-    display: block;
-    width: 350px;
-    padding: 20px;
-    border: 1px solid #7b1e31;
-    margin: 20px 0;
-    min-height: 100px;
-    font-size: 1em;
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: #7b1e31;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+}
+
+.form-inline input {
+    margin: 10px 0;
+}
+
+.form-inline {
+    flex-direction: column;
+    align-items: stretch;
 }
 
 /* -------------- 
