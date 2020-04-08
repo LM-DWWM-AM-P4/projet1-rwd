@@ -3,83 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d5862bfc1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shojumaru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.ico"/>
     <title>Hanami sushi</title>
 </head>
 <body>
 <header id="p_head">
-    <div id="infoContact">02.35.42.39.33</div>
-    <div id="btnHome">Hanami-sushi</div>
+    <div id="infoContact1">
+        
+        <address><i class="fas fa-map-marker-alt"></i> 153 Quai George V,
+        <br>  76600 Le Havre
+        <br><i class="fas fa-phone-square-alt"></i> 02.35.42.39.33</address>
+    </div>
+    <div id="btnHome"><a href="#myTopnav"><h1>Hanami sushi</h1></a></div>
+    <div></div>
 </header>
 
-<body>
-<!-- 
--- NavBarf
--------------------------------------->
-<nav id="navBar">
+<nav class="topnav" id="myTopnav">
     <div id="startPage">
         <a href="#p_head">
-            <img src="assets/img/my-icons-collection/svg/004-pagoda.svg">
+            <img src="assets/img/my-icons-collection/svg/004-pagoda.svg" alt="temple japonais" title="temple japonais">
             Accueil
         </a>
     </div>
     <div id="story">
         <a href="#secStory">
-            <img src="assets/img/my-icons-collection/svg/001-temple.svg">
+            <img src="assets/img/my-icons-collection/svg/001-temple.svg" alt="torii" title="torii">
             Notre restaurant
-        </a>
-    </div>
-    <div id="service">
-        <a href="#secService">
-            <img src="assets/img/my-icons-collection/svg/002-asian.svg">
-            Nos préstations
         </a>
     </div>
     <div id="contact">
         <a href="#secContact">
-            <img src="assets/img/my-icons-collection/svg/003-invoice.svg">
+            <img src="assets/img/my-icons-collection/svg/003-invoice.svg" alt="papier et plume" title="papier et plume">
             Contact
         </a>
     </div>
-</nav>
+    <div class="dropdown">
+      <button class="dropbtn">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#secService">Nos spécialités</a>
+        <a href="assets/img/menu.jpg">Le Menu</a>
+        <a href="#secContact">
+            <img src="assets/img/my-icons-collection/svg/002-asian.svg">
+            Devis Traiteur
+        </a>
+      </div>
+    </div>
+    <a href="#secFooter">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="respNavBar()">&#9776;</a>
+</nav> 
+
 
 <!-- 
 -- Story
 ---------------------------------->
 
 <section id="secStory">
-    <h1>Bienvenue</h1>
-    <div>
-        <img src="assets/img/japan-4807317_960_720.jpg">
-        <h2>Notre histoire</h2>
-        <p>dfgdfgdf</p>
+    <div class="borderTitle"><h1>Bienvenue<h1></div>
+        <div class="imgStory">
+            <div class="txtStory">
+                <h2>Notre histoire</h2>
+                <p>La famille Tanaka réputé dans la province d'Osaka pour leur stand de sushi, au marché de Kuromon Ichiba s'est installé au Havre
+                 depuis 2 générations.</p>
+                <p>Depuis 2018, Kiryo le 1er fils et sa femme Aya vous accueillent et font perdurer la tradition ainsi que leur savoir faire ancestrale au sein 
+                 de leur étabilissement.</p>
+                <p>Venez découvrir les délices d'une cuisine rafinée et exotique, sur place, à emporter, ou encore en faisant appel au service traiteur pour vos
+                 soirées et vos récéptions (sur devis via le formulaire de <a href="#secContact">contact</a>).</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- 
--- Réalisations
+-- Spécialités
 ------------------------------------------>
  <section id="secService">
-     <h1>Nos réalisations</h1>
-     <div id="gallery">
-         <div id="left_arrow"><span></span></div>
-         <div id="mainGallery">
-             <div class="slotimg">
-             </div>
-         </div>
-         <div id="right_arrow"><span>></span></div>
-     </div>
+    <div class="borderTitle"><h1>Nos spécialités<h1></div>
+        <div class="caroussel_diapo">
+            <input checked id="carou_un" name="rotation" type="radio">
+            <label for="carou_un"></label>
+            <input id="carou_deux" name="rotation" type="radio">
+            <label for="carou_deux"></label>
+            <input id="carou_trois" name="rotation" type="radio">
+            <label for="carou_trois"></label>
+            <input id="carou_quatre" name="rotation" type="radio">
+            <label for="carou_quatre"></label>
+            <input id="carou_cinq" name="rotation" type="radio">
+            <label for="carou_cinq"></label>
+            <input id="carou_six" name="rotation" type="radio">
+            <label for="carou_six"></label>
+            <input id="carou_sept" name="rotation" type="radio">
+            <label for="carou_sept"></label>
+            <input id="carou_huit" name="rotation" type="radio">
+            <label for="carou_huit"></label>
+            <div class="contenu_carou">
+                <div class="caroussel">
+                    <div>
+                        <h1>Poulet façon Osaka</h1>
+                        <img src="assets/img/Maruei.jpg" alt="Poulet Osaka" title="Poulet Osaka">
+                        <p>Poulet façon Osaka et ses feuilles de nori</p>
+                    </div>
+                    <div>
+                        <h1>Boeuf Teryaki</h1>
+                        <img src="assets/img/beuf_teriyaki.jpg" alt="Boeuf Teryaki" title="Boeuf Teryaki">
+                        <p>Boeuf façon Teryaki</p>
+                    </div>
+                    <div>
+                        <h1>Brochettes de crevettes</h1>
+                        <img src="assets/img/Brochettes_crevettes.jpg" alt="Brochettes de crevettes" title="Brochettes de crevettes">
+                        <p>Brochettes de crevettes flambées</p>
+                    </div>
+                    <div>
+                        <h1>Nigiris et makis</h1>
+                        <img src="assets/img/platter.jpg" alt="Nigiris et makis" title="Nigiris et makis">
+                        <p>Plateau nigiri et makis</p>
+                    </div>
+                    <div>
+                        <h1>Kamaboto</h1>
+                        <img src="assets/img/Kamaboko.jpg" alt="Kamato" title="Kamato">
+                        <p>Kamaboko traditionnel</p>
+                    </div>
+                    <div>
+                        <h1>Sashimis</h1>
+                        <img src="assets/img/sashimi_tartare.jpg" alt="Sashimis" title="Sashimis">
+                        <p>Sashimis tartare d'algues et caramel au pamplemousse</p>
+                    </div>
+                    <div>
+                        <h1>Chirashi</h1>
+                        <img src="assets/img/chirashi-tofu.jpg" alt="Chirashi" title="Chirashi">
+                        <p>Chirashi au tofu fumé</p>
+                    </div>
+                    <div>
+                        <h1>Tempura</h1>
+                        <img src="assets/img/tempura.jpg" alt="Tempura" title="Tempura">
+                        <p>Tempura façon Osaka</p>
+                    </div>
+                </div>
+            </div>
+        </div>
  </section>
 <!-- 
 -- Contact
 ----------------------------------->
 
 <section id="secContact">
-    <h1>Contact</h1>
-    <p>Demander un devis</p>
-    <form action="">
-        
+    <div class="borderTitle"><h1>Contact<h1></div>
+    <div class="divCenter">
+        <p>Vous souhaitez nous contacter, passer une commande à emporter,réserver une table ou même privatiser 
+        notre salle pour un séminanire au autre ? N'hésitez plus ! Envoyez nous un e-mail avec vos coordonnées,
+        via le formulaire suivant nous vous recontacterons rapidement.<br>
+        Si vous souhaitez un devis pour une préstation traiteur, veuillez nous indiquer la date, le lieu et le 
+        nombre de personne qui vous conviendraient nous ferons au mieux pour répondre à vos exigences.
+        </p>
+    </div>
+    <form method="post">
+
+        <fieldset>
+            <legend>Contact</legend>
+            <div>
+                <label for="surname">Prénom </label>
+                <input type="text" id="surname" required>
+            </div>
+            <div>
+                <label for="name">Nom </label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="email">Votre email </label>
+                <input type="email" id="email" placeholder="exemple@email.com"required>
+            </div>
+            <div>
+                <label for="phone">Téléphone </label>
+                <input type="text" id="phone" required>
+            </div>
+            <div>
+            <label for="object">Votre demande concerne :</label>
+            <select name="object" id="object" size="1">
+                <option>Devis Traiteur</option>
+                <option>Commande à emporter</option>
+                <option>Réservations</option>
+                <option>Privatisations</option>
+                <option>Réclamations</option>
+                <option>Autres (à préciser)</option>
+            </select>
+            </div>
+            <textarea></textarea>
+            <br>
+            <button type="submit">Envoyer le message</button>
+        </fieldset>
     </form>
 </section>
 
@@ -87,13 +203,45 @@
 <!-- 
 -- Footer
 ----------------------------------->
-<footer>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/mangsaabguru" title="mangsaabguru">mangsaabguru</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/linector" title="Linector">Linector</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+<footer id="secFooter">
+    
+
+    <div class="flexRow">
+        <a href="https://www.facebook.com/pages/Hanami-Sushi/1485077131732711" target="_blanc">
+        <i class="fab fa-facebook-square fa-5x"></i>
+        </a>
+        <div id="gMap">
+            <h1>Où nous trouver ?</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.663966245157!2d0.11625451576130999!3d49.490854263919154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f1cec5cd277%3A0xedadb77dfb8c137e!2sHanami%20Sushi%20bar!5e0!3m2!1sfr!2sfr!4v1586314049805!5m2!1sfr!2sfr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="legalInf">
+            <h1>Informations Légales</h1>
+            <p>
+                <Address>
+                    HANAMI SUSHI BAR,<br>
+                    153 QUAI GEORGE V 76600 LE HAVRE 
+                </Address>
+                <br>
+                SIREN 	794636068
+                <br>
+                SIRET (siege) 	79463606800015
+                <br>
+                MONSIEUR BEN KAN
+                <br>
+                Entrepreneur individuel
+                <br>
+            </p>
+        </div>
+    </div>
+    <div id="copyright"><p>- Site Ouèb conçu et réalisé par <strong>Born2Lose Corp. -</strong></p></div>
 </footer>
 
 <script>
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+
+</script>
+<!-- scriptNavBar -->
+<script  src="assets/js/scriptNavBar.js"></script>
+<!-- scriptNavBar --> 
 
 // Get the navbar
 var navbar = document.getElementById("navBar");
