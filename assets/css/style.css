@@ -516,6 +516,12 @@ footer---------
 --------------*/
 
 
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 footer {
     background-color: #7B1E31;
@@ -523,19 +529,30 @@ footer {
     padding: 12px;
 }
 
+#gMap {
+    padding: 12px;
+}
+
 #gMap h1 {
     text-align: left;
     color: #f2f2f2;
 }
+
 #legalInf h1 {
     text-align: left;
     color: #f2f2f2;
+    margin: 12px;
 }
-#legalInf li {
-    list-style: none;
+
+#legalInf {
     font-size: 0.8rem;
-    line-height: .2rem;
+    line-height: .9rem;
 }
+
+#copyright{
+    text-align: right;
+}
+
 #credits {
     visibility: hidden;
 }
