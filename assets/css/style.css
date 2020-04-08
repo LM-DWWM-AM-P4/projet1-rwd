@@ -3,6 +3,9 @@ html, body {
     font-family: "Open Sans";
 }
 
+a, a:hover, a:visited {
+    color: #f2f2f2;
+}
 section {
     padding: 16px;
   }
@@ -32,7 +35,7 @@ h1, h2 {
 }
 
 #btnHome h1 {
-    padding: 4px;
+    padding: 0px 8px 0 8px;
     font-size: larger;
     color: #f2f2f2;
     margin: 0px;
@@ -75,6 +78,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    border-top: black;
+    border-bottom: black;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
 }
 #navBar > div{
     padding: 10px;
@@ -100,68 +107,11 @@ nav > div > a{
     filter: invert();
     height : 20px;
 }
-/* ---------- */
-/* fin navbar */
-/* ---------- */
-/* CARROUSSEL */
-.scene {
-    border: 1px solid #CCC;
-    margin: 40px 0;
-    position: relative;
-    width: 210px;
-    height: 140px;
-    margin: 40px auto;
-    perspective: 1000px;
-  }
-  
-.carousel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform: translateZ(-200px);
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
-  
-.carousel__cell {
-    position: absolute;
-    width: 190px;
-    height: 120px;
-    left: 10px;
-    top: 10px;
-    border: 2px solid black;
-    line-height: 116px;
-    font-size: 80px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-  }
-  
-  .carousel__cell:nth-child(6n+1) {
-      background-image: url(../img/clipdealer_A101740782_preview.jpg); 
-      background-repeat: no-repeat; 
-      background-size: cover;
-    }
-  .carousel__cell:nth-child(6n+2) {
-    background-image: url(../img/asian-food-bowl-chopsticks-cooking-628776.jpg); 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    }
-  .carousel__cell:nth-child(6n+3) { background: hsla( 120, 100%, 50%, 0.8); }
-  .carousel__cell:nth-child(6n+4) { background: hsla(180, 100%, 50%, 0.8); }
-  .carousel__cell:nth-child(6n+5) { background: hsla(240, 100%, 50%, 0.8); }
-  .carousel__cell:nth-child(6n+6) { background: hsla(300, 100%, 50%, 0.8); }
-  
-  .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(200px); }
-  .carousel__cell:nth-child(2) { transform: rotateY( 60deg) translateZ(200px); }
-  .carousel__cell:nth-child(3) { transform: rotateY( 120deg) translateZ(200px); }
-  .carousel__cell:nth-child(4) { transform: rotateY(180deg) translateZ(200px); }
-  .carousel__cell:nth-child(5) { transform: rotateY(240deg) translateZ(200px); }
-  .carousel__cell:nth-child(6) { transform: rotateY(300deg) translateZ(200px); }
 
-  /* ---------- */
+/* ----------- */
 /* début story */
-/* ---------- */
+/* ----------- */
+
 #secStory{
     position: relative;
     display: flex;
@@ -173,7 +123,7 @@ nav > div > a{
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
-    margin-top: 20px;
+    margin: 2px;
     width: 80%;
     max-width: 1024px;
     min-width: 250px;
@@ -181,17 +131,18 @@ nav > div > a{
     align-self: center;
     justify-self: center;
     border-color: #7b1e31;
-    border-radius: 20px;
+    border-radius: 12px;
     border-style: solid;
     border-width: 2px;
-    padding: 12px;
+    padding: 8px;
 }
 .txtStory{
     background-color: rgba(0, 0, 0, 0.74);
     background-size: 100%;
+    border-radius: 12px;
+    min-width: 120px;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 5px;
     text-align: center;
     font-size: 0.6rem;
     width: 30%;
@@ -200,16 +151,233 @@ h2{
     font-size: 0.8rem;
     color: white;
 }
+
 /* ---------- */
-/* fin story */
+/* CARROUSSEL */
 /* ---------- */
+
+
+
+.caroussel_diapo input{position:absolute;left:-9999px}
+    
+.caroussel_diapo{	
+    position:relative;
+    text-align: center;
+    margin:20px auto}
+
+
+.contenu_carou {
+    max-width: 500px;
+    min-height: 430px; 
+    margin: 2rem auto;
+    perspective: 1000px}
+
+
+.caroussel {
+    position: relative;
+    transform-style: preserve-3d;
+    max-width: 500px;
+    min-height: 430px;
+    transition: 1s transform}
+
+.caroussel div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline:1px solid transparent;
+    backface-visibility:hidden;
+    will-change: transform;
+    transition: 1s transform;
+    background-color: rgba(123, 30, 49);
+    color: #f2f2f2;
+}
+.caroussel div h1 {
+    color: #f2f2f2;
+}
+.caroussel div img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.caroussel div p {
+    margin: 0px;
+    height: 80px;
+    background-color: rgb(27, 27, 27);
+}
+
+	
+.caroussel div:nth-child(1){
+	
+	transform:translate3d(0,0,540px) scale(.8)
+	
+	}
+	
+.caroussel div:nth-child(2){
+	
+	transform:rotateY(45deg) translateZ(540px) scale(.8)
+	
+	}
+	
+.caroussel div:nth-child(3){
+	
+	transform:rotateY(90deg) translateZ(540px) scale(.8)
+		
+	}
+	
+.caroussel div:nth-child(4){
+	
+	transform:rotateY(135deg) translateZ(540px) scale(.8)
+	
+	}
+	
+.caroussel div:nth-child(5){
+	
+	transform:rotateY(180deg) translateZ(540px) scale(.8)
+	
+	}
+	
+.caroussel div:nth-child(6){
+	
+	transform:rotateY(225deg) translateZ(540px) scale(.8)
+	
+	}
+	
+.caroussel div:nth-child(7){
+	
+transform:rotateY(270deg) translateZ(540px) scale(.8)
+	
+	}
+	
+.caroussel div:nth-child(8){
+	
+transform:rotateY(315deg) translateZ(540px) scale(.8)
+
+}
+
+.caroussel_diapo input[type=radio] + label {
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.733);
+display: inline-block;
+width: 20px;
+border-radius: 50%;
+height: 20px
+	}
+	
+.caroussel_diapo input[type=radio]:checked + label{
+	
+	background-color: #7B1E31
+		
+	}
+
+
+	
+
+/*gauche*/
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel{
+
+	transform:translateZ(-540px)
+	
+	}
+	
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel{
+	
+transform:translateZ(-540px) rotateY(-45deg)
+	
+	}
+	
+.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel{
+	
+	transform:translateZ(-540px) rotateY(-90deg)
+		
+	}
+	
+.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel{
+	
+	transform:translateZ(-540px) rotateY(-135deg)
+		
+	}
+	
+.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel{
+	
+	transform:translateZ(-540px) rotateY(-180deg)
+		
+	}
+	
+.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel{
+	
+	transform:translateZ(-540px) rotateY(-225deg)
+		
+	}
+	
+.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel{
+	
+	transform:translateZ(-540px) rotateY(-270deg)
+	
+	}
+	
+.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel{
+	
+	transform:translateZ(-540px) rotateY(-315deg)
+	
+	}
+
+
+/*droite*/
+.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel div:nth-child(1){
+	
+	transform:translateZ(540px) scale(1)
+	
+	}
+	
+.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel div:nth-child(2){
+	
+transform:rotateY(45deg) translateZ(540px) scale(1)
+	
+	}
+.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel div:nth-child(3){
+	
+	transform:rotateY(90deg) translateZ(540px) scale(1)
+	
+	}
+	
+.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel div:nth-child(4){
+	
+	transform:rotateY(135deg) translateZ(540px) scale(1)
+	
+	}
+	
+.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel div:nth-child(5){
+	
+	transform:rotateY(180deg) translateZ(540px) scale(1)
+	
+	}
+	
+.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel div:nth-child(6){
+	
+	transform:rotateY(225deg) translateZ(540px) scale(1)
+	
+	}
+	
+.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel div:nth-child(7){
+	
+	transform:rotateY(270deg) translateZ(540px) scale(1)
+	
+	}
+	
+.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel div:nth-child(8){
+	
+	transform:rotateY(315deg) translateZ(540px) scale(1)
+		
+	}
 
 /* ---------- */
 /* Formulaire */
 /* ---------- */
 fieldset {
 
-    width: 50px;
+    width: 80%;
+    max-width: 1024px;
     padding: 10px;
     margin: 10px;
     border: none;
@@ -218,42 +386,11 @@ fieldset {
     border: 2px solid #7b1e31;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
-
-
-.form-inline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-.form-inline label {
-    margin: 5px 10px 5px 0;
-}
-
-.form-inline input {
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-
-.form-inline button {
-    padding: 10px 20px;
-    background-color: #7b1e31;
-    border: 1px solid #ddd;
-    color: white;
-    cursor: pointer;
-}
-
-.form-inline input {
-    margin: 10px 0;
-}
-
-.form-inline {
-    flex-direction: column;
-    align-items: stretch;
+textarea {
+    width: 80%;
+    height: 10rem;
 }
 
 /* -------------- 
