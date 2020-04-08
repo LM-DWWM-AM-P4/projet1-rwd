@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d5862bfc1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shojumaru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Hanami sushi</title>
@@ -10,18 +12,16 @@
 <body>
 <header id="p_head">
     <div id="infoContact1">
-        <p>153 Quai George V,
-        <br> 76600 Le Havre
-        <br>tel: 02.35.42.39.33</p>
+        
+        <address><i class="fas fa-map-marker-alt"></i> 153 Quai George V,
+        <br>  76600 Le Havre
+        <br><i class="fas fa-phone-square-alt"></i> 02.35.42.39.33</address>
     </div>
-    <div id="btnHome"><h1>Hanami sushi</h1></div>
+    <div id="btnHome"><a href="#myTopnav"><h1>Hanami sushi</h1></a></div>
     <div></div>
 </header>
 
-<!-- 
--- NavBar
--------------------------------------->
-<nav id="navBar">
+<nav class="topnav" id="myTopnav">
     <div id="startPage">
         <a href="#p_head">
             <img src="assets/img/my-icons-collection/svg/004-pagoda.svg">
@@ -34,19 +34,29 @@
             Notre restaurant
         </a>
     </div>
-    <div id="service">
-        <a href="#secService">
-            <img src="assets/img/my-icons-collection/svg/002-asian.svg">
-            Nos spécialités
-        </a>
-    </div>
     <div id="contact">
         <a href="#secContact">
             <img src="assets/img/my-icons-collection/svg/003-invoice.svg">
             Contact
         </a>
     </div>
-</nav>
+    <div class="dropdown">
+      <button class="dropbtn">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#secService">Nos spécialités</a>
+        <a href="assets/img/menu.jpg">Le Menu</a>
+        <a href="#secContact">
+            <img src="assets/img/my-icons-collection/svg/002-asian.svg">
+            Devis Traiteur
+        </a>
+      </div>
+    </div>
+    <a href="#secFooter">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="respNavBar()">&#9776;</a>
+</nav> 
+
 
 <!-- 
 -- Story
@@ -72,7 +82,7 @@
 -- Réalisations
 ------------------------------------------>
  <section id="secService">
-    <div class="borderTitle"><h1>Nos réalisations<h1></div>
+    <div class="borderTitle"><h1>Nos spécialités<h1></div>
         <div class="caroussel_diapo">
             <input checked id="carou_un" name="rotation" type="radio">
             <label for="carou_un"></label>
@@ -162,7 +172,14 @@
 
 <section id="secContact">
     <div class="borderTitle"><h1>Contact<h1></div>
-    <p>Demander un devis</p>
+    <div class="divCenter">
+        <p>Vous souhaitez nous contacter, passer une commande à emporter,réserver une table ou même privatiser 
+        notre salle pour un séminanire au autre ? N'hésitez plus ! Envoyez nous un e-mail avec vos coordonnées,
+        via le formulaire suivant nous vous recontacterons rapidement.<br>
+        Si vous souhaitez un devis pour une préstation traiteur, veuillez nous indiquer la date, le lieu et le 
+        nombre de personne qui vous conviendraient nous ferons au mieux pour répondre à vos exigences.
+        </p>
+    </div>
     <form method="post">
 
         <fieldset>
@@ -205,12 +222,40 @@
 <!-- 
 -- Footer
 ----------------------------------->
-<footer>
+<footer id="secFooter">
+    <i class="fab fa-facebook-square"></i>
+
+
+    <div id="gMap">
+        <h1>Où nous trouver ?</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.663966245157!2d0.11625451576130999!3d49.490854263919154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f1cec5cd277%3A0xedadb77dfb8c137e!2sHanami%20Sushi%20bar!5e0!3m2!1sfr!2sfr!4v1586314049805!5m2!1sfr!2sfr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div id="legalInf">
+        <h1>Informations Légales</h1>
+        <ul>
+            <li>
+                <Address>HANAMI SUSHI BAR, 153 QUAI GEORGE V 76600 LE HAVRE </Address>
+            </li>
+            <li>
+                <p>SIREN 	794636068</p>
+            </li>
+            <li>
+                <p>SIRET (siege) 	79463606800015</p>
+            </li>
+            <li>
+                <p>MONSIEUR BEN KAN</p>
+            </li>
+            <li>
+                <p>Entrepreneur individuel</p>
+            </li>
+        </ul>
+    </div>
     <div id="credits">
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
         <div>Icons made by <a href="https://www.flaticon.com/authors/mangsaabguru" title="mangsaabguru">mangsaabguru</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
         <div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
         <div>Icons made by <a href="https://www.flaticon.com/authors/linector" title="Linector">Linector</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+    </div>
 </footer>
 
 <script>

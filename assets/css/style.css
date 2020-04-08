@@ -15,6 +15,7 @@ h1, h2 {
     font-family: shojumaru;
     color: #7B1E31;
     text-align: center;
+    margin: 0;
 }
 
 #infoContact1 {
@@ -39,7 +40,9 @@ h1, h2 {
     font-size: larger;
     color: #f2f2f2;
     margin: 0px;
-
+}
+#btnHome a {
+    text-decoration: none;
 }
 header {
     margin: 0;
@@ -60,53 +63,145 @@ header {
     margin: auto;
     border-color: #7B1E31;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 8px;
     width: 200px;
 
 }
 
-/* ------------ */
-/* début navbar */
-/* ------------ */
-#navBar{
-    z-index: 20000;
-    overflow: hidden;
-    background-color: #7B1E31;
-    font-family: shojumaru;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: black;
-    border-bottom: black;
-    border-width: 0px 0px 2px 0px;
-    border-style: solid;
-}
-#navBar > div{
-    padding: 10px;
-    color: #f2f2f2;
-    text-align: center;
+ /* Add a black background color to the top navigation */
+.topnav {
+background-color: rgb(34, 34, 34);
+overflow: hidden;
+z-index: 99;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
 
-nav > div > a{
-    color: white;
-    font-size: small;
-    text-decoration: none;
-}
-
-#navBar > div > a > img {
-    padding-right: 8px;
-    padding-left: 8px;
+.topnav a img {
+    height: 20px;
     filter: invert();
-    height : 20px;
 }
+
+/* Add an active class to highlight the current page */
+#startPage {
+background-color: #7b1e31;
+color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+font-size: 17px;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a img {
+    filter: none;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+background-color: #555;
+color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+.topnav div:not(:first-child), .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+.topnav.responsive div:not(.dropdown-content) {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+} 
+
+
+
+
 
 /* ----------- */
 /* début story */
@@ -123,7 +218,7 @@ nav > div > a{
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
-    margin: 2px;
+    margin: 30px;
     width: 80%;
     max-width: 1024px;
     min-width: 250px;
@@ -144,9 +239,14 @@ nav > div > a{
     color: white;
     padding: 5px;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     width: 30%;
 }
+
+@media screen and (max-width: 600px) {
+    .txtStory {width: 75%;}
+}
+
 h2{
     font-size: 0.8rem;
     color: white;
@@ -374,6 +474,24 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
 /* ---------- */
 /* Formulaire */
 /* ---------- */
+
+.divCenter {
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.74);
+    background-size: 100%;
+    border-radius: 12px;
+    min-width: 120px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#secContact > p {
+    text-align: center;
+    
+}
 fieldset {
 
     width: 80%;
@@ -401,9 +519,23 @@ footer---------
 
 footer {
     background-color: #7B1E31;
-    height: 100px;
+    color: #f2f2f2;
+    padding: 12px;
 }
 
+#gMap h1 {
+    text-align: left;
+    color: #f2f2f2;
+}
+#legalInf h1 {
+    text-align: left;
+    color: #f2f2f2;
+}
+#legalInf li {
+    list-style: none;
+    font-size: 0.8rem;
+    line-height: .2rem;
+}
 #credits {
     visibility: hidden;
 }
