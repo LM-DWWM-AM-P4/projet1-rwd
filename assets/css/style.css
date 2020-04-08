@@ -67,6 +67,9 @@ header {
     width: 200px;
 
 }
+/* ------ */
+/* topnav */
+/* ------ */
 
  /* Add a black background color to the top navigation */
 .topnav {
@@ -482,6 +485,7 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
     background-size: 100%;
     border-radius: 12px;
     min-width: 120px;
+    max-width: 1024px;
     color: white;
     padding: 5px;
     text-align: center;
@@ -541,16 +545,17 @@ footer {
 #legalInf h1 {
     text-align: left;
     color: #f2f2f2;
-    margin: 12px;
+    margin: 12px 0;
 }
 
 #legalInf {
     font-size: 0.8rem;
     line-height: .9rem;
+    margin: 12px;
 }
 
 #copyright{
-    text-align: right;
+    text-align: center;
 }
 
 #credits {
