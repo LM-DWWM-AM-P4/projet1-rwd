@@ -37,45 +37,55 @@
         <!-- ===TopNav=== -->
         <!-- ============ -->
 
-        <nav class="navbar sticky-top navbar-dark justify-content-rigth">
-            <div id="startPage">
-                <a href="#p_head">
-                    <img src="assets/img/my-icons-collection/svg/004-pagoda.svg" alt="temple japonais"
-                        title="temple japonais">
-                    Accueil
-                </a>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-end">
+            <button class="navbar-toggler bg-white " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#p_head"><img src="assets/img/my-icons-collection/svg/004-pagoda.svg"
+                                alt="temple japonais" title="temple japonais">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#secStory"><img
+                                src="assets/img/my-icons-collection/svg/001-temple.svg" alt="torii" title="torii">
+                            Notre restaurant</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#secContact"><img
+                                src="assets/img/my-icons-collection/svg/003-invoice.svg" alt="papier et plume"
+                                title="papier et plume">
+                            Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-body" href="#secService">Nos spécialités</a>
+                            <a class="dropdown-item text-body" href="assets/img/menu.jpg">Le Menu</a>
+                            <a class="dropdown-item text-body" href="#secContact">
+                                <img src="assets/img/my-icons-collection/svg/002-asian.svg">
+                                Devis Traiteur
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#secFooter">About</a>
+                    </li>
+                </ul>
             </div>
-
-            <div id="story">
-                <a href="#secStory">
-                    <img src="assets/img/my-icons-collection/svg/001-temple.svg" alt="torii" title="torii">
-                    Notre restaurant
-                </a>
-            </div>
-
-            <div id="contact">
-                <a href="#secContact">
-                    <img src="assets/img/my-icons-collection/svg/003-invoice.svg" alt="papier et plume"
-                        title="papier et plume">
-                    Contact
-                </a>
-            </div>
-
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Services 
-
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <a class="dropdown-item text-body" href="#secService">Nos spécialités</a>
-                    <a class="dropdown-item text-body" href="assets/img/menu.jpg">Le Menu</a>
-                    <a class="dropdown-item text-body" href="#secContact"> <img src="assets/img/my-icons-collection/svg/002-asian.svg"> Devis Traiteur</a>
-                </div>
-            </div>
-
-            <a href="#secFooter">About</a>
         </nav>
+
         <!-- Story -->
 
         <section id="secStory">

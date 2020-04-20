@@ -429,7 +429,7 @@ footer {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 50px auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
 
     grid-template-areas: "header header"
         "topnav topnav"
@@ -454,16 +454,11 @@ nav {
 
 nav a img {
     height: 20px;
-    filter: invert(1);
+    filter: invert();
 }
 
-.dropdown-menu a img{
+.dropdown-menu a img {
     filter: none;
-}
-
-.dropdown > button {
-    background-color: rgb(34, 34, 34);
-    border: none;
 }
 
 #secStory {
