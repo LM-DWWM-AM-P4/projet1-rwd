@@ -476,3 +476,56 @@ nav a img {
 footer {
     grid-area: footer;
 }
+
+@media screen and (max-width: 576px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto;
+    
+        grid-template-areas: "topnav topnav"
+            "header header"
+            "secStory secStory"
+            "secService secService"
+            "secContact secContact"
+            "footer footer";
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    /* ============ */
+    /* ===NavBar=== */
+    /* ============ */
+    
+    nav {
+        grid-area: topnav;
+        background-color: rgb(34, 34, 34);
+    }
+    
+    nav a img {
+        height: 20px;
+        filter: invert();
+    }
+    
+    .dropdown-menu a img {
+        filter: none;
+    }
+    
+    #secStory {
+        grid-area: secStory;
+    }
+    
+    #secService {
+        grid-area: secService;
+    }
+    
+    #secContact {
+        grid-area: secContact;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+}
