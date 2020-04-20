@@ -512,12 +512,12 @@ h2 {
 
 }
 
-fieldset {
 
+fieldset {
     width: 80%;
     max-width: 1024px;
     padding: 10px;
-    margin: 10px;
+  
     border: none;
     background: white;
     border-radius: 3px;
@@ -585,7 +585,7 @@ footer {
     .wrapper {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: auto 41vh 500px 500px 500px auto;
+        grid-template-rows: auto 41vh auto auto auto auto;
 
     }
 
@@ -594,7 +594,6 @@ footer {
     }
 
     header {
-
         grid-column: span 8;
         grid-row: 2;
         height: 41vh;
@@ -605,21 +604,65 @@ footer {
     } */
 
     .topnav {
-
         grid-column: Span 8;
         grid-row: 1;
     }
 
     #secStory {
-
         grid-column: span 8;
         grid-row: 3;
     }
 
+    /* modifiacation du carousel */
     #secService {
-
         grid-column: span 8;
         grid-row: 4;
+    }
+    .contenu_carou {
+        margin: 20px 0 0 0;
+    }
+
+    .caroussel_diapo {
+        margin: 20px 0 0 0;
+    }
+    /* modifiacation du formulaire de contact (taille des blocs et position) */
+    #secContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .borderTitle {
+        margin-top: 15px;
+    }
+
+    .divCenter {
+        width: 100%;
+        margin: 10px;
+    }
+
+    fieldset {
+        width: 94%;
+        border-radius: 10px;
+        border: 2px solid #7b1e31;
+    }
+
+    label {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .formulaire {
+        margin-bottom: 10px;
+    }
+
+    input {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #object {
+        margin-bottom: 10px;
     }
 
     footer {
@@ -692,6 +735,5 @@ footer {
         transform: rotateY(315deg) translateZ(540px) scale(.0)
     }
 }
-
 /* grid */
 /* PHONE POV */
