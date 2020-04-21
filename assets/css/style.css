@@ -1,16 +1,21 @@
-html, body {
-    margin : 0;
+html,
+body {
+    margin: 0;
     font-family: "Open Sans";
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
     color: #f2f2f2;
 }
+
 section {
     padding: 16px;
-  }
+}
 
-h1, h2 {
+h1,
+h2 {
     font-size: medium;
     font-family: shojumaru;
     color: #7B1E31;
@@ -22,7 +27,7 @@ h1, h2 {
     margin: 12px;
     align-self: start;
     color: #f2f2f2;
-    flex:0.8;
+    flex: 0.8;
 }
 
 #btnHome {
@@ -41,188 +46,55 @@ h1, h2 {
     color: #f2f2f2;
     margin: 0px;
 }
+
 #btnHome a {
     text-decoration: none;
 }
+
 header {
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    
+
     background-image: url("../img/cherry-blossoms-4069596_960_720.png");
     background-position: center;
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.borderTitle{
+.borderTitle {
     display: block;
     margin: auto;
     border-color: #7B1E31;
     border-style: solid;
     border-radius: 8px;
     width: 200px;
+    grid-column: 1 / 3;
+    grid-row: 1;
 
 }
-/* ------ */
-/* topnav */
-/* ------ */
-
- /* Add a black background color to the top navigation */
-.topnav {
-background-color: rgb(34, 34, 34);
-overflow: hidden;
-z-index: 99;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-}
-
-.topnav a img {
-    height: 20px;
-    filter: invert();
-}
-
-/* Add an active class to highlight the current page */
-#startPage {
-background-color: #7b1e31;
-color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-display: none;
-}
-
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-float: left;
-overflow: hidden;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-font-size: 17px;
-border: none;
-outline: none;
-color: white;
-padding: 14px 16px;
-background-color: inherit;
-font-family: inherit;
-margin: 0;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content a {
-float: none;
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
-}
-
-.dropdown-content a img {
-    filter: none;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-background-color: #555;
-color: white;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-background-color: #ddd;
-color: black;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-display: block;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-.topnav div:not(:first-child), .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-}
-.topnav a.icon {
-    float: right;
-    display: block;
-}
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-.topnav.responsive {position: relative;}
-.topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-}
-.topnav.responsive div:not(.dropdown-content) {
-    float: none;
-    display: block;
-    text-align: left;
-    }
-.topnav.responsive .dropdown {float: none;}
-.topnav.responsive .dropdown-content {position: relative;}
-.topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-} 
-
-
-
-
 
 /* ----------- */
 /* début story */
 /* ----------- */
 
-#secStory{
+#secStory {
     position: relative;
     display: flex;
     flex-direction: column;
 }
-.imgStory{
+
+.imgStory {
     display: flex;
     background-image: url("../img/japan-4807317_960_720.jpg");
     background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    margin: 30px;
-    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 30px;
+    width: 100%;
     max-width: 1024px;
     min-width: 250px;
     min-height: 300px;
@@ -234,7 +106,8 @@ display: block;
     border-width: 2px;
     padding: 8px;
 }
-.txtStory{
+
+.txtStory {
     background-color: rgba(0, 0, 0, 0.74);
     background-size: 100%;
     border-radius: 12px;
@@ -247,10 +120,12 @@ display: block;
 }
 
 @media screen and (max-width: 600px) {
-    .txtStory {width: 75%;}
+    .txtStory {
+        width: 75%;
+    }
 }
 
-h2{
+h2 {
     font-size: 0.8rem;
     color: white;
 }
@@ -260,227 +135,13 @@ h2{
 /* ---------- */
 
 
-
-.caroussel_diapo input{position:absolute;left:-9999px}
-    
-.caroussel_diapo{	
-    position:relative;
-    text-align: center;
-    margin:20px auto}
-
-
-.contenu_carou {
-    max-width: 500px;
-    min-height: 430px; 
-    margin: 2rem auto;
-    perspective: 1000px}
-
-
-.caroussel {
-    position: relative;
-    transform-style: preserve-3d;
-    max-width: 500px;
-    min-height: 430px;
-    transition: 1s transform}
-
-.caroussel div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    outline:1px solid transparent;
-    backface-visibility:hidden;
-    will-change: transform;
-    transition: 1s transform;
-    background-color: rgba(123, 30, 49);
-    color: #f2f2f2;
-}
-.caroussel div h1 {
-    color: #f2f2f2;
-}
-.caroussel div img {
-    max-width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.caroussel div p {
-    margin: 0px;
-    height: 80px;
-    background-color: rgb(27, 27, 27);
-}
-
-	
-.caroussel div:nth-child(1){
-	
-	transform:translate3d(0,0,540px) scale(.8)
-	
-	}
-	
-.caroussel div:nth-child(2){
-	
-	transform:rotateY(45deg) translateZ(540px) scale(.8)
-	
-	}
-	
-.caroussel div:nth-child(3){
-	
-	transform:rotateY(90deg) translateZ(540px) scale(.8)
-		
-	}
-	
-.caroussel div:nth-child(4){
-	
-	transform:rotateY(135deg) translateZ(540px) scale(.8)
-	
-	}
-	
-.caroussel div:nth-child(5){
-	
-	transform:rotateY(180deg) translateZ(540px) scale(.8)
-	
-	}
-	
-.caroussel div:nth-child(6){
-	
-	transform:rotateY(225deg) translateZ(540px) scale(.8)
-	
-	}
-	
-.caroussel div:nth-child(7){
-	
-transform:rotateY(270deg) translateZ(540px) scale(.8)
-	
-	}
-	
-.caroussel div:nth-child(8){
-	
-transform:rotateY(315deg) translateZ(540px) scale(.8)
-
-}
-
-.caroussel_diapo input[type=radio] + label {
-cursor: pointer;
-background-color: rgba(0, 0, 0, 0.733);
-display: inline-block;
-width: 20px;
-border-radius: 50%;
-height: 20px
-	}
-	
-.caroussel_diapo input[type=radio]:checked + label{
-	
-	background-color: #7B1E31
-		
-	}
-
-
-	
-
-/*gauche*/
-.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel{
-
-	transform:translateZ(-540px)
-	
-	}
-	
-.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel{
-	
-transform:translateZ(-540px) rotateY(-45deg)
-	
-	}
-	
-.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel{
-	
-	transform:translateZ(-540px) rotateY(-90deg)
-		
-	}
-	
-.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel{
-	
-	transform:translateZ(-540px) rotateY(-135deg)
-		
-	}
-	
-.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel{
-	
-	transform:translateZ(-540px) rotateY(-180deg)
-		
-	}
-	
-.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel{
-	
-	transform:translateZ(-540px) rotateY(-225deg)
-		
-	}
-	
-.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel{
-	
-	transform:translateZ(-540px) rotateY(-270deg)
-	
-	}
-	
-.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel{
-	
-	transform:translateZ(-540px) rotateY(-315deg)
-	
-	}
-
-
-/*droite*/
-.caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel div:nth-child(1){
-	
-	transform:translateZ(540px) scale(1)
-	
-	}
-	
-.caroussel_diapo #carou_deux:checked ~ .contenu_carou .caroussel div:nth-child(2){
-	
-transform:rotateY(45deg) translateZ(540px) scale(1)
-	
-	}
-.caroussel_diapo #carou_trois:checked ~ .contenu_carou .caroussel div:nth-child(3){
-	
-	transform:rotateY(90deg) translateZ(540px) scale(1)
-	
-	}
-	
-.caroussel_diapo #carou_quatre:checked ~ .contenu_carou .caroussel div:nth-child(4){
-	
-	transform:rotateY(135deg) translateZ(540px) scale(1)
-	
-	}
-	
-.caroussel_diapo #carou_cinq:checked ~ .contenu_carou .caroussel div:nth-child(5){
-	
-	transform:rotateY(180deg) translateZ(540px) scale(1)
-	
-	}
-	
-.caroussel_diapo #carou_six:checked ~ .contenu_carou .caroussel div:nth-child(6){
-	
-	transform:rotateY(225deg) translateZ(540px) scale(1)
-	
-	}
-	
-.caroussel_diapo #carou_sept:checked ~ .contenu_carou .caroussel div:nth-child(7){
-	
-	transform:rotateY(270deg) translateZ(540px) scale(1)
-	
-	}
-	
-.caroussel_diapo #carou_huit:checked ~ .contenu_carou .caroussel div:nth-child(8){
-	
-	transform:rotateY(315deg) translateZ(540px) scale(1)
-		
-	}
-
 /* ---------- */
 /* Formulaire */
 /* ---------- */
 
-.divCenter {
+.card {
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.74);
     background-size: 100%;
     border-radius: 12px;
@@ -490,16 +151,17 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
     padding: 5px;
     text-align: center;
     font-size: 0.8rem;
+    text-justify: inter-word;
+    display: none;
 }
 
-#secContact > p {
+#secContact>p {
     text-align: center;
-    
 }
+
 fieldset {
 
-    width: 80%;
-    max-width: 1024px;
+    width: 100%;
     padding: 10px;
     margin: 10px;
     border: none;
@@ -510,6 +172,16 @@ fieldset {
     margin-right: auto;
     text-align: center;
 }
+
+.row {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 40%;
+}
+
+
 textarea {
     width: 80%;
     height: 10rem;
@@ -518,7 +190,6 @@ textarea {
 /* -------------- 
 footer---------
 --------------*/
-
 
 .flexRow {
     display: flex;
@@ -554,10 +225,210 @@ footer {
     margin: 12px;
 }
 
-#copyright{
+#copyright {
     text-align: center;
 }
 
 #credits {
     visibility: hidden;
+}
+
+/* ================ */
+/* === Css grid === */
+/* ================ */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 41vh auto auto auto auto;
+
+    grid-template-areas: "topnav topnav"
+        "header header"
+        "secStory secStory"
+        "secService secService"
+        "secContact secContact"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    height: 41vh;
+}
+
+/* ============ */
+/* ===NavBar=== */
+/* ============ */
+
+.Bienvenue {
+    margin-bottom: 30px;
+}
+
+nav {
+    grid-area: topnav;
+    background-color: rgb(34, 34, 34);
+}
+
+nav a img {
+    height: 20px;
+    filter: invert();
+}
+
+.dropdown-menu a img {
+    filter: none;
+}
+
+#secStory {
+    grid-area: secStory;
+}
+
+#secService {
+    grid-area: secService;
+}
+
+.borderTitle {
+    margin-bottom: 20px;
+}
+
+#secContact {
+    grid-area: secContact;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* config pour tablettes */
+
+@media screen and (min-width: 650px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 17% 1fr 17%;
+        grid-template-rows: auto 50vh auto auto auto auto;
+
+        grid-template-areas: "topnav topnav topnav"
+            "header header header"
+            "secStory secStory secStory"
+            ". secService ."
+            ". secContact ."
+            "footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+        height: 50vh;
+    }
+
+    /* ============ */
+    /* ===NavBar=== */
+    /* ============ */
+
+    nav {
+        grid-area: topnav;
+        background-color: rgb(34, 34, 34);
+    }
+
+    nav a img {
+        height: 20px;
+        filter: invert();
+    }
+
+    .borderTitle {
+        margin-top: 20px;
+    }
+
+    .dropdown-menu a img {
+        filter: none;
+    }
+
+    #secStory {
+        grid-area: secStory;
+        /* margin: 0px;
+        padding: 0px; */
+    }
+
+    #secService {
+        grid-area: secService;
+    }
+
+    .borderTitle {
+        margin-bottom: 30px;
+    }
+
+    #secContact {
+        grid-area: secContact;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .card {
+        display: block;
+    }
+}
+
+/* config pour ecran normale */
+
+@media screen and (min-width: 900px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 25% 1fr 25%;
+        grid-template-rows: 100vh auto auto auto auto auto;
+
+        grid-template-areas: "header header header"
+            "topnav topnav topnav"
+            ". secStory ."
+            ". secService ."
+            ". secContact ."
+            "footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+        height: 100vh;
+    }
+
+    /* ============ */
+    /* ===NavBar=== */
+    /* ============ */
+
+    nav {
+        grid-area: topnav;
+        background-color: rgb(34, 34, 34);
+    }
+
+    nav a img {
+        height: 20px;
+        filter: invert();
+    }
+
+    .dropdown-menu a img {
+        filter: none;
+    }
+
+    #secStory {
+        grid-area: secStory;
+    }
+
+    #secService {
+        grid-area: secService;
+    }
+
+    .borderTitle {
+        margin-bottom: 30px;
+    }
+
+    #secContact {
+        grid-area: secContact;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .card {
+        display: block;
+    }
 }
