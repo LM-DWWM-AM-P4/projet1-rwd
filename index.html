@@ -207,60 +207,91 @@
         </div>
         <!-- Contact -->
 
+
+
         <section id="secContact">
             <div class="borderTitle">
                 <h1>Contact<h1>
             </div>
-            <div class="divCenter">
-                <p>Vous souhaitez nous contacter, passer une commande à emporter,réserver une table ou même privatiser
+            
+            <div class="card">
+                <div class="card-body">
+                    Vous souhaitez nous contacter, passer une commande à emporter,réserver une table ou même privatiser
                     notre salle pour un séminanire au autre ? N'hésitez plus ! Envoyez nous un e-mail avec vos
                     coordonnées,
                     via le formulaire suivant nous vous recontacterons rapidement.<br>
                     Si vous souhaitez un devis pour une préstation traiteur, veuillez nous indiquer la date, le lieu et
                     le
                     nombre de personne qui vous conviendraient nous ferons au mieux pour répondre à vos exigences.
-                </p>
-            </div>
+                </div>
+              </div>
             <form method="post">
 
                 <fieldset>
                     <legend>Contact</legend>                   
-                        <div class="form-group">
-                          <label for="prenom">Prenom</label>
-                          <input type="text" class="form-control" id="prenom" placeholder="">
-                        </div>
-                        <div class="form-group">
-                          <label for="nom">Nom</label>
-                          <input type="text" class="form-control" id="nom" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="mail">Votre Mail</label>
-                            <input type="email" class="form-control" id="mail" placeholder="">
-                        </div>                    
-                        <div class="form-group">
-                          <label for="userphone">Telephone</label>
-                          <input type="number" class="form-control" id="userphone" placeholder="">
-                        </div>
-                        <label for="custom-select">Votre demande concerne
-                        <select class="custom-select">
-                            <option selected="">Devis traiteur</option>                            
-                            <option value="1">Commande à emporter</option>
-                            <option value="2">Réservations</option>
-                            <option value="3">Privatisations</option>
-                            <option value="4">Réclamations</option>
-                            <option value="5">Autres (à préciser)</option>
-                        </select> </label>
-                        <div class="form-group">
-                            <label for="textarea"></label>
-                            <textarea class="form-control" id="textarea" rows="4"></textarea>
-                        </div>
-                        <div class="button">
-                        <button class="btn btn-outline-danger" type="submit">Envoyer</button>
-                        </div>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-4">
+                            <label for="prenom">Prenom</label>
+                          </div>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="prenom" placeholder="">   
+                          </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-4">
+                                <label for="nom">Nom</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="nom" placeholder=""> 
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="mail">Votre Mail</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="email" class="form-control" id="mail" placeholder="">
+                                </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="userphone">Telephone</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="number" class="form-control" id="userphone" placeholder="">
+                                </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="custom-select">Votre demande concerne</label>
+                                    </div>
+                                <div class="col-12">
+                                    <select class="custom-select">
+                                        <option selected="">Devis traiteur</option>                            
+                                        <option value="1">Commande à emporter</option>
+                                        <option value="2">Réservations</option>
+                                        <option value="3">Privatisations</option>
+                                        <option value="4">Réclamations</option>
+                                        <option value="5">Autres (à préciser)</option>
+                                </div>
+                                    </select> 
+                            </div>                                
+                    </div>
+                                
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea class="form-control" id="textarea" rows="4"></textarea>
+                                    </div>
+                                    </div>
+                                    
+                                        <div class="col-12">
+                                            <button class="btn btn-outline-danger" type="submit">Envoyer</button>
+                                        </div>
+                                                            
                 </fieldset>
             </form>
         </section>
-
         <!-- Footer -->
 
         <footer id="secFooter">

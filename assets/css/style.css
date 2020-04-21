@@ -130,9 +130,25 @@ h2 {
     color: white;
 }
 
-.divCenter {
+/* ---------- */
+/* CARROUSSEL */
+/* ---------- */
+.borderTitle {
+    display: block;
+    margin: auto;
+    border-color: #7B1E31;
+    border-style: solid;
+    border-radius: 8px;
+    width: 200px;
+}
+
+/* ---------- */
+/* Formulaire */
+/* ---------- */
+
+.card {
     margin: 20px auto;
-    width: 100%;
+    width: 60%;
     background-color: rgba(0, 0, 0, 0.74);
     background-size: 100%;
     border-radius: 12px;
@@ -142,6 +158,7 @@ h2 {
     padding: 5px;
     text-align: center;
     font-size: 0.8rem;
+    text-justify: inter-word;  
 }
 
 #secContact>p {
@@ -150,7 +167,7 @@ h2 {
 
 fieldset {
 
-    width: 100%;
+    width: 60%;    
     padding: 10px;
     margin: 10px;
     border: none;
@@ -159,12 +176,16 @@ fieldset {
     border: 2px solid #7b1e31;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: center; 
+}  
+.row{
+    margin-bottom: 5px;
 }
 
 input {
     width: 40%;
 }
+
 
 textarea {
     width: 80%;
