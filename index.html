@@ -4,15 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- font awsome -->
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/d5862bfc1c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shojumaru&display=swap" rel="stylesheet">
-    <!-- bootsrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- icone du site -->
     <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.ico" />
@@ -38,6 +34,7 @@
         <!-- ===TopNav=== -->
         <!-- ============ -->
 
+        <!-- navbar responsive avec bootstrap -->
         <nav id="myTopnav" class="navbar navbar-expand-md navbar-light sticky-top">
             <div class="nav-item">
                 <a class="nav-link text-light" href="#p_head"><img
@@ -76,7 +73,7 @@
                             <a class="dropdown-item text-body" href="#secService">Nos spécialités</a>
                             <a class="dropdown-item text-body" href="assets/img/menu.jpg">Le Menu</a>
                             <a class="dropdown-item text-body" href="#secContact">
-                                <img src="assets/img/my-icons-collection/svg/002-asian.svg">
+                                <img src="assets/img/my-icons-collection/svg/002-asian.svg" alt="baguette chinoise en noir et blanc icone">
                                 Devis Traiteur
                             </a>
                         </div>
@@ -93,11 +90,11 @@
 
         <section id="secStory">
             <div class="borderTitle Bienvenue">
-                <h1>Bienvenue<h1>
+                <h2>Bienvenue</h2>
             </div>
             <div class="imgStory">
                 <div class="txtStory">
-                    <h2>Notre histoire</h2>
+                    <h2 style="color: white; font-size: 0.8rem;">Notre histoire</h2>
                     <p>La famille Tanaka réputé dans la province d'Osaka pour leur stand de sushi, au marché de Kuromon
                         Ichiba s'est installé au Havre
                         depuis 2 générations.</p>
@@ -117,11 +114,12 @@
         <!-- =========================== -->
         <!-- ===carousel/Spécialités===  -->
         <!-- =========================== -->
+
         <div id="secService">
             <div class="borderTitle">
-                <h1>Nos spécialités<h1>
+                <h2>Nos spécialités</h2>
             </div>
-            
+
             <div id="carousel_content" class="carousel slide bg-primary" data-ride="carousel">
 
                 <ol class="carousel-indicators">
@@ -205,15 +203,17 @@
                 </a>
             </div>
         </div>
-        <!-- Contact -->
 
-
+        <!-- ============= -->
+        <!-- ===Contact=== -->
+        <!-- ============= -->
 
         <section id="secContact">
             <div class="borderTitle">
-                <h1>Contact<h1>
+                <h2>Contact</h2>
             </div>
-            
+
+            <!-- carte de description post formulaire -->
             <div class="card">
                 <div class="card-body">
                     Vous souhaitez nous contacter, passer une commande à emporter,réserver une table ou même privatiser
@@ -224,71 +224,74 @@
                     le
                     nombre de personne qui vous conviendraient nous ferons au mieux pour répondre à vos exigences.
                 </div>
-              </div>
+            </div>
+            <!-- formulaire -->
             <form method="post">
 
                 <fieldset>
-                    <legend>Contact</legend>                   
+                    <legend>Contact</legend>
                     <div class="container">
                         <div class="row">
-                          <div class="col-4">
-                            <label for="prenom">Prenom</label>
-                          </div>
-                          <div class="col-8">
-                            <input type="text" class="form-control" id="prenom" placeholder="">   
-                          </div>
-                          </div>
-                          <div class="row">
+                            <div class="col-4">
+                                <label for="prenom">Prenom</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="prenom" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-4">
                                 <label for="nom">Nom</label>
                             </div>
                             <div class="col-8">
-                                <input type="text" class="form-control" id="nom" placeholder=""> 
+                                <input type="text" class="form-control" id="nom" placeholder="">
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="mail">Votre Mail</label>
                             </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <label for="mail">Votre Mail</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="email" class="form-control" id="mail" placeholder="">
-                                </div>
-                                </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <label for="userphone">Telephone</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="number" class="form-control" id="userphone" placeholder="">
-                                </div>
-                                </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <label for="custom-select">Votre demande concerne</label>
-                                    </div>
-                                <div class="col-12">
-                                    <select class="custom-select">
-                                        <option selected="">Devis traiteur</option>                            
-                                        <option value="1">Commande à emporter</option>
-                                        <option value="2">Réservations</option>
-                                        <option value="3">Privatisations</option>
-                                        <option value="4">Réclamations</option>
-                                        <option value="5">Autres (à préciser)</option>
-                                </div>
-                                    </select> 
-                            </div>                                
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="mail" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="userphone">Telephone</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="number" class="form-control" id="userphone" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Votre demande concerne</label>
+                            </div>
+                            <div class="col-12">                                
+                                <select class="custom-select">
+                                    <option selected="">Devis traiteur</option>
+                                    <option value="1">Commande à emporter</option>
+                                    <option value="2">Réservations</option>
+                                    <option value="3">Privatisations</option>
+                                    <option value="4">Réclamations</option>
+                                    <option value="5">Autres (à préciser)</option>                                
+                                </select>
+                            
+                            </div>
+                            
+                        </div>
                     </div>
-                                
-                                <div class="row">
-                                    <div class="col-12">
-                                        <textarea class="form-control" id="textarea" rows="4"></textarea>
-                                    </div>
-                                    </div>
-                                    
-                                        <div class="col-12">
-                                            <button class="btn btn-outline-danger" type="submit">Envoyer</button>
-                                        </div>
-                                                            
+
+                    <div class="row">
+                        <div class="col-12">                            
+                            <textarea class="form-control" id="textarea" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-outline-danger" type="submit">Envoyer</button>
+                    </div>
+
                 </fieldset>
             </form>
         </section>
@@ -296,35 +299,28 @@
 
         <footer id="secFooter">
 
-
             <div class="flexRow">
-                <a href="https://www.facebook.com/pages/Hanami-Sushi/1485077131732711" target="_blanc">
+                <a href="https://www.facebook.com/pages/Hanami-Sushi/1485077131732711" target="_blank">
                     <i class="fab fa-facebook-square fa-5x"></i>
                 </a>
                 <div id="gMap">
-                    <h1>Où nous trouver ?</h1>
+                    <h4>Où nous trouver ?</h4>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.663966245157!2d0.11625451576130999!3d49.490854263919154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f1cec5cd277%3A0xedadb77dfb8c137e!2sHanami%20Sushi%20bar!5e0!3m2!1sfr!2sfr!4v1586314049805!5m2!1sfr!2sfr"
-                        width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        width="300" height="300" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div id="legalInf">
-                    <h1>Informations Légales</h1>
-                    <p>
-                        <Address>
-                            HANAMI SUSHI BAR,<br>
-                            153 QUAI GEORGE V 76600 LE HAVRE
-                        </Address>
-                        <br>
-                        SIREN 794636068
-                        <br>
-                        SIRET (siege) 79463606800015
-                        <br>
-                        MONSIEUR BEN KAN
-                        <br>
-                        Entrepreneur individuel
-                        <br>
-                    </p>
+                    <h4>Informations Légales</h4>
+                    <ul>
+                        <li>HANAMI SUSHI BAR,</li>
+                        <li> QUAI GEORGE V 76600 LE HAVRE</li>
+                        <li>&nbsp;</li>                 
+                        <li>SIREN 794636068</li>                        
+                        <li>SIRET (siege) 79463606800015</li>                       
+                        <li>MONSIEUR BEN KAN</li>                      
+                        <li>Entrepreneur individuel</li>                     
+                    </ul>
                 </div>
             </div>
             <div id="copyright">
