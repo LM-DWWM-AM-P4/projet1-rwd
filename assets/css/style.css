@@ -289,7 +289,7 @@ footer {
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto 50vh auto auto auto auto;
     
         grid-template-areas: "topnav topnav"
             "header header"
@@ -301,6 +301,7 @@ footer {
     
     header {
         grid-area: header;
+        height: 41vh;
     }
     
     /* ============ */
