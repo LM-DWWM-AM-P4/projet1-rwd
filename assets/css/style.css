@@ -15,7 +15,8 @@ section {
 }
 
 h1,
-h2 {
+h2,
+h4 {
     font-size: medium;
     font-family: shojumaru;
     color: #7B1E31;
@@ -73,7 +74,10 @@ header {
     border-radius: 8px;
     width: 200px;
 }
-
+li{
+    list-style: none;
+    padding: 0;
+}
 /* ----------- */
 /* début story */
 /* ----------- */
@@ -122,18 +126,9 @@ header {
     }
 }
 
-h2 {
-    font-size: 0.8rem;
-    color: white;
-}
-
 /* ---------- */
 /* CARROUSSEL */
 /* ---------- */
-<<<<<<< HEAD
-=======
-
->>>>>>> e4825f955651bd3e957f251d1ced4dfb863de0b7
 
 /* ---------- */
 /* Formulaire */
@@ -172,23 +167,10 @@ fieldset {
     margin-right: auto;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e4825f955651bd3e957f251d1ced4dfb863de0b7
 .row {
     margin-bottom: 5px;
 }
 
-input {
-    width: 40%;
-}
-
-
-textarea {
-    width: 80%;
-    height: 10rem;
-}
 
 /* -------------- 
 footer---------
@@ -211,12 +193,12 @@ footer {
     padding: 12px;
 }
 
-#gMap h1 {
+#gMap h4 {
     text-align: left;
     color: #f2f2f2;
 }
 
-#legalInf h1 {
+#legalInf h4 {
     text-align: left;
     color: #f2f2f2;
     margin: 12px 0;
@@ -273,7 +255,7 @@ nav {
 
 nav a img {
     height: 20px;
-    filter: invert();
+    filter: invert(1);
 }
 
 .dropdown-menu a img {
@@ -333,7 +315,7 @@ footer {
 
     nav a img {
         height: 20px;
-        filter: invert();
+        filter: invert(1);
     }
 
     .borderTitle {
@@ -404,7 +386,7 @@ footer {
 
     nav a img {
         height: 20px;
-        filter: invert();
+        filter: invert(1);
     }
 
     .dropdown-menu a img {
