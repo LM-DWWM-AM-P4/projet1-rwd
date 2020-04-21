@@ -67,7 +67,7 @@ header {
 
 .borderTitle {
     display: block;
-    margin: 0px auto;
+    margin: auto;
     border-color: #7B1E31;
     border-style: solid;
     border-radius: 8px;
@@ -244,7 +244,7 @@ header {
 /* ============ */
 
 .Bienvenue {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
 
 nav {
@@ -269,8 +269,8 @@ nav a img {
     grid-area: secService;
 }
 
-.borderTitle {
-    margin-bottom: 30px;
+.borderTitle { 
+    margin-bottom: 20px;
 }
 
 #secContact {
@@ -281,63 +281,131 @@ footer {
     grid-area: footer;
 }
 
+/* config pour tablettes */
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 700px) {
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 100vh auto auto auto auto;
-    
-        grid-template-areas: "topnav topnav"
-            "header header"
-            "secStory secStory"
-            "secService secService"
-            "secContact secContact"
-            "footer footer";
+        grid-template-columns: 17% 1fr 17%;
+        grid-template-rows: auto 50vh auto auto auto auto;
+
+        grid-template-areas: "topnav topnav topnav"
+            "header header header"
+            "secStory secStory secStory"
+            ". secService ."
+            ". secContact ."
+            "footer footer footer";
     }
-    
+
     header {
         grid-area: header;
-        height: 41vh;
+        height: 50vh;
     }
-    
+
     /* ============ */
     /* ===NavBar=== */
     /* ============ */
-    
+
     nav {
         grid-area: topnav;
         background-color: rgb(34, 34, 34);
     }
-    
+
     nav a img {
         height: 20px;
         filter: invert();
     }
-    
+
+    .borderTitle { 
+        margin-top: 20px;
+    }
+
     .dropdown-menu a img {
         filter: none;
     }
-    
+
     #secStory {
         grid-area: secStory;
+        margin: 0px;
+        padding: 0px;
     }
-    
+
     #secService {
         grid-area: secService;
     }
-    
+
     .borderTitle {
         margin-bottom: 30px;
     }
-    
+
     #secContact {
         grid-area: secContact;
     }
-    
+
     footer {
         grid-area: footer;
     }
-    
+
+}
+
+/* config pour ecrant normale */
+
+@media screen and (min-width: 900px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 25% 1fr 25%;
+        grid-template-rows: 100vh auto auto auto auto auto;
+
+        grid-template-areas: "header header header"
+            "topnav topnav topnav"
+            ". secStory ."
+            ". secService ."
+            ". secContact ."
+            "footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+        height: 100vh;
+    }
+
+    /* ============ */
+    /* ===NavBar=== */
+    /* ============ */
+
+    nav {
+        grid-area: topnav;
+        background-color: rgb(34, 34, 34);
+    }
+
+    nav a img {
+        height: 20px;
+        filter: invert();
+    }
+
+    .dropdown-menu a img {
+        filter: none;
+    }
+
+    #secStory {
+        grid-area: secStory;
+    }
+
+    #secService {
+        grid-area: secService;
+    }
+
+    .borderTitle {
+        margin-bottom: 30px;
+    }
+
+    #secContact {
+        grid-area: secContact;
+    }
+
+    footer {
+        grid-area: footer;
+    }
 }
