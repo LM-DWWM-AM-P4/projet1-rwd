@@ -15,7 +15,8 @@ section {
 }
 
 h1,
-h2 {
+h2,
+h4 {
     font-size: medium;
     font-family: shojumaru;
     color: #7B1E31;
@@ -74,13 +75,16 @@ header {
     border-style: solid;
     border-radius: 8px;
     width: 200px;
-    grid-column: 1 / 3;
-    grid-row: 1;
+}
+li{
+    list-style: none;
+    padding: 0;
 }
 
 /* ----------- */
 /* début story */
 /* ----------- */
+
 #secStory {
     position: relative;
     display: flex;
@@ -119,11 +123,9 @@ header {
     width: 30%;
 }
 
-h2 {
-    font-size: 0.8rem;
-    color: white;
-}
-
+/* ---------- */
+/* Formulaire */
+/* ---------- */
 
 .card {
     margin: 20px auto;
@@ -158,20 +160,10 @@ fieldset {
     margin-right: auto;
     text-align: center;
 }
-
 .row {
     margin-bottom: 5px;
 }
 
-input {
-    width: 40%;
-}
-
-
-textarea {
-    width: 80%;
-    height: 10rem;
-}
 
 /* ============ */
 /* ===footer=== */
@@ -194,12 +186,12 @@ footer {
     padding: 12px;
 }
 
-#gMap h1 {
+#gMap h4 {
     text-align: left;
     color: #f2f2f2;
 }
 
-#legalInf h1 {
+#legalInf h4 {
     text-align: left;
     color: #f2f2f2;
     margin: 12px 0;
@@ -218,10 +210,6 @@ footer {
 #credits {
     visibility: hidden;
 }
-
-/*  */
-/*  */
-/*  */
 
 .wrapper {
     display: grid;
@@ -348,7 +336,7 @@ footer {
     }
 }
 
-/* config pour ecran normale */
+/* config pour ecran normal */
 
 @media screen and (min-width: 900px) {
 
@@ -377,7 +365,7 @@ footer {
 
     nav a img {
         height: 20px;
-        filter: invert();
+        filter: invert(1);
     }
 
     .dropdown-menu a img {
