@@ -72,6 +72,8 @@ header {
     border-style: solid;
     border-radius: 8px;
     width: 200px;
+    grid-column: 1 / 3;
+    grid-row: 1;
 
 }
 
@@ -503,18 +505,15 @@ h2 {
     color: white;
     padding: 5px;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.8rem;   
 }
-
 #secContact>p {
     text-align: center;
-
 }
 
 fieldset {
 
-    width: 80%;
-    max-width: 1024px;
+    width: 60em;    
     padding: 10px;
     margin: 10px;
     border: none;
@@ -523,8 +522,42 @@ fieldset {
     border: 2px solid #7b1e31;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: center;    
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;   
 }
+#prenom{
+    grid-column: 1;
+    grid-row: 1;
+}
+#nom{
+    grid-column: 1;
+    grid-row: 1;
+}
+#mail{
+    grid-column: 1;
+    grid-row: 2;
+}
+#userphone{
+    grid-column: 1;
+    grid-row: 2;
+}
+#custom-select{
+    grid-column: 2fr;
+    grid-row: 3;
+}
+#textarea{
+    grid-column: 2fr;
+    grid-row: 4;
+}
+.button{
+    grid-column: 1 / 3;
+    grid-row: 5;
+}
+
+
 
 textarea {
     width: 80%;
@@ -612,7 +645,7 @@ header {
 }
 
 #secContact {
-    grid-area: secContact;
+    grid-area: secContact;     
 }
 
 footer {

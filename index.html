@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d5862bfc1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shojumaru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -185,37 +186,39 @@
             <form method="post">
 
                 <fieldset>
-                    <legend>Contact</legend>
-                    <div>
-                        <label for="surname">Prénom </label>
-                        <input type="text" id="surname" required>
-                    </div>
-                    <div>
-                        <label for="name">Nom </label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Votre email </label>
-                        <input type="email" id="email" placeholder="exemple@email.com" required>
-                    </div>
-                    <div>
-                        <label for="phone">Téléphone </label>
-                        <input type="text" id="phone" required>
-                    </div>
-                    <div>
-                        <label for="object">Votre demande concerne :</label>
-                        <select name="object" id="object" size="1">
-                            <option>Devis Traiteur</option>
-                            <option>Commande à emporter</option>
-                            <option>Réservations</option>
-                            <option>Privatisations</option>
-                            <option>Réclamations</option>
-                            <option>Autres (à préciser)</option>
-                        </select>
-                    </div>
-                    <textarea></textarea>
-                    <br>
-                    <button type="submit">Envoyer le message</button>
+                    <legend>Contact</legend>                   
+                        <div class="form-group">
+                          <label for="prenom">Prenom</label>
+                          <input type="text" class="form-control" id="prenom" placeholder="">
+                        </div>
+                        <div class="form-group">
+                          <label for="nom">Nom</label>
+                          <input type="text" class="form-control" id="nom" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">Votre Mail</label>
+                            <input type="email" class="form-control" id="mail" placeholder="">
+                        </div>                    
+                        <div class="form-group">
+                          <label for="userphone">Telephone</label>
+                          <input type="number" class="form-control" id="userphone" placeholder="">
+                        </div>
+                        <label for="custom-select">Votre demande concerne
+                        <select class="custom-select">
+                            <option selected="">Devis traiteur</option>                            
+                            <option value="1">Commande à emporter</option>
+                            <option value="2">Réservations</option>
+                            <option value="3">Privatisations</option>
+                            <option value="4">Réclamations</option>
+                            <option value="5">Autres (à préciser)</option>
+                        </select> </label>
+                        <div class="form-group">
+                            <label for="textarea"></label>
+                            <textarea class="form-control" id="textarea" rows="4"></textarea>
+                        </div>
+                        <div class="button">
+                        <button class="btn btn-outline-danger" type="submit">Envoyer</button>
+                        </div>
                 </fieldset>
             </form>
         </section>
