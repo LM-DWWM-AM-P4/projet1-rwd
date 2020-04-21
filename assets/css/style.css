@@ -67,7 +67,7 @@ header {
 
 .borderTitle {
     display: block;
-    margin: auto;
+    margin: 0px auto;
     border-color: #7B1E31;
     border-style: solid;
     border-radius: 8px;
@@ -93,8 +93,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 30px;
-    width: 80%;
+    margin: 0px 30px;
+    width: 100%;
     max-width: 1024px;
     min-width: 250px;
     min-height: 300px;
@@ -130,25 +130,9 @@ h2 {
     color: white;
 }
 
-/* ---------- */
-/* CARROUSSEL */
-/* ---------- */
-.borderTitle {
-    display: block;
-    margin: auto;
-    border-color: #7B1E31;
-    border-style: solid;
-    border-radius: 8px;
-    width: 200px;
-}
-
-/* ---------- */
-/* Formulaire */
-/* ---------- */
-
 .divCenter {
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.74);
     background-size: 100%;
     border-radius: 12px;
@@ -157,15 +141,16 @@ h2 {
     color: white;
     padding: 5px;
     text-align: center;
-    font-size: 0.8rem;   
+    font-size: 0.8rem;
 }
+
 #secContact>p {
     text-align: center;
 }
 
 fieldset {
 
-    width: 80%;    
+    width: 100%;
     padding: 10px;
     margin: 10px;
     border: none;
@@ -174,13 +159,12 @@ fieldset {
     border: 2px solid #7b1e31;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; 
-}  
-input{
-    width: 40%;
+    text-align: center;
 }
 
-
+input {
+    width: 40%;
+}
 
 textarea {
     width: 80%;
@@ -190,7 +174,6 @@ textarea {
 /* -------------- 
 footer---------
 --------------*/
-
 
 .flexRow {
     display: flex;
@@ -240,24 +223,29 @@ footer {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 100px 1fr 100px ;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 41vh auto auto auto auto;
 
-    grid-template-areas: "header header header"
-        "topnav topnav topnav"
-        "secStory secStory secStory"
-        ". secService ."
-        "secContact secContact secContact"
-        "footer footer footer";
+    grid-template-areas: "topnav topnav"
+        "header header"
+        "secStory secStory"
+        "secService secService"
+        "secContact secContact"
+        "footer footer";
 }
 
 header {
     grid-area: header;
+    height: 41vh;
 }
 
 /* ============ */
 /* ===NavBar=== */
 /* ============ */
+
+.Bienvenue {
+    margin-bottom: 0px;
+}
 
 nav {
     grid-area: topnav;
@@ -281,19 +269,25 @@ nav a img {
     grid-area: secService;
 }
 
+.borderTitle {
+    margin-bottom: 30px;
+}
+
 #secContact {
-    grid-area: secContact;     
+    grid-area: secContact;
 }
 
 footer {
     grid-area: footer;
 }
 
-@media screen and (max-width: 576px) {
+
+@media screen and (min-width: 786px) {
+
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 50vh auto auto auto auto;
+        grid-template-rows: auto 100vh auto auto auto auto;
     
         grid-template-areas: "topnav topnav"
             "header header"
@@ -337,6 +331,7 @@ footer {
     .borderTitle {
         margin-bottom: 30px;
     }
+    
     #secContact {
         grid-area: secContact;
     }
@@ -344,4 +339,5 @@ footer {
     footer {
         grid-area: footer;
     }
+    
 }
