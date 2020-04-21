@@ -146,9 +146,9 @@ h2 {
 /* Formulaire */
 /* ---------- */
 
-.divCenter {
+.card {
     margin: 20px auto;
-    width: 80%;
+    width: 60%;
     background-color: rgba(0, 0, 0, 0.74);
     background-size: 100%;
     border-radius: 12px;
@@ -157,7 +157,8 @@ h2 {
     color: white;
     padding: 5px;
     text-align: center;
-    font-size: 0.8rem;   
+    font-size: 0.8rem;
+    text-justify: inter-word;  
 }
 #secContact>p {
     text-align: center;
@@ -165,7 +166,7 @@ h2 {
 
 fieldset {
 
-    width: 100%;    
+    width: 60%;    
     padding: 10px;
     margin: 10px;
     border: none;
