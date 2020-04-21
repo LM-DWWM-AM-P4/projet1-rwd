@@ -130,6 +130,10 @@ h2 {
 /* ---------- */
 /* CARROUSSEL */
 /* ---------- */
+<<<<<<< HEAD
+=======
+
+>>>>>>> e4825f955651bd3e957f251d1ced4dfb863de0b7
 
 /* ---------- */
 /* Formulaire */
@@ -147,7 +151,8 @@ h2 {
     padding: 5px;
     text-align: center;
     font-size: 0.8rem;
-    text-justify: inter-word; 
+    text-justify: inter-word;
+    display: none;
 }
 
 #secContact>p {
@@ -156,7 +161,7 @@ h2 {
 
 fieldset {
 
-    width: 100%;    
+    width: 100%;
     padding: 10px;
     margin: 10px;
     border: none;
@@ -167,6 +172,10 @@ fieldset {
     margin-right: auto;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e4825f955651bd3e957f251d1ced4dfb863de0b7
 .row {
     margin-bottom: 5px;
 }
@@ -279,7 +288,7 @@ nav a img {
     grid-area: secService;
 }
 
-.borderTitle { 
+.borderTitle {
     margin-bottom: 20px;
 }
 
@@ -327,7 +336,7 @@ footer {
         filter: invert();
     }
 
-    .borderTitle { 
+    .borderTitle {
         margin-top: 20px;
     }
 
@@ -337,8 +346,8 @@ footer {
 
     #secStory {
         grid-area: secStory;
-        margin: 0px;
-        padding: 0px;
+        /* margin: 0px;
+        padding: 0px; */
     }
 
     #secService {
@@ -357,9 +366,12 @@ footer {
         grid-area: footer;
     }
 
+    .card {
+        display: block;
+    }
 }
 
-/* config pour ecrant normale */
+/* config pour ecran normale */
 
 @media screen and (min-width: 900px) {
 
@@ -417,5 +429,9 @@ footer {
 
     footer {
         grid-area: footer;
+    }
+
+    .card {
+        display: block;
     }
 }
